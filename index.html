@@ -1,0 +1,222 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="C:\Users\AndresStevenRamirezR\Desktop\seminario\Roommate\app\materialize/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="js/general.js">
+    </head>
+
+    <body>
+  		<header id="header"><!-- header --> 
+        <nav id="menu"> <!-- Inicio de menu --> 
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Roommate</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="index.html#footer">Contactenos</a></li>
+              <li><a href="#modal1" id="btn_postear">Iniciar sesion</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index.html#footer">Contactenos</a></li>
+              <li><a href="#modal1" id="btn_postear">Iniciar sesion</a></li>
+            </ul>
+            <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+          </div>
+        </nav> <!-- Fin de menu --> 
+  		</header><!-- /header --> 
+      
+      <div class="parallax-container">
+        <div class="parallax"><img src="http://blogs.lasprovincias.es/elsindromededarrin/files/2016/01/o-JENNIFER-ANISTON-FRIENDS-facebook-1.jpg"></div>
+      </div>
+      <!--Inicio de cart de informacion con su respectiva imagen --> 
+      <div class="row" id="informacion-row">
+        <div class="col s4">    <!--Informacion de la primera cart --> 
+          <div class="row" >
+            <div class="col s12 m7">
+              <div class="card small" id="carta-uno">
+                <div class="card-image" >
+                  <img src="https://cdn.pixabay.com/photo/2015/12/09/22/26/people-1085695_960_720.png" >
+                </div>
+                <div class="card-content">
+                  <p>¿Necesitas piso o buscas compañer@s para compartir?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+        <div class="col s4">  <!--Informacion de la segunda cart --> 
+          <div class="row" >
+            <div class="col s12 m7">
+              <div class="card small" id="carta-dos">
+                <div class="card-image">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkCF_wgI5tCnplsBhDh23wy7psxUHLwiF2sVfxyPAswOcLfI8hQ" >
+                </div>
+                <div class="card-content">
+                  <p>Registrate por medio de tus redes sociales</p>
+                </div>   
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s4">  <!--Informacion de la tercera cart --> 
+          <div class="row" >
+            <div class="col s12 m7">
+              <div class="card small" id="carta-tres">
+                <div class="card-image">
+                  <img src="http://images.gofreedownload.net/search-male-user-30278.jpg" >
+                </div>
+                <div class="card-content">
+                  <p>Búsquedas acertadas y a tu medida</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  <!--Fin de cart de informacion con su respectiva imagen --> 
+
+      <!--Inicio de marco inferior-->
+      <div class="row ">
+        <div class="col s3"><img src="http://st.depositphotos.com/1518767/2805/i/450/depositphotos_28056555-stock-photo-housemates-choosing-colour-for-wall.jpg" width="100%"></div>
+        <div class="col s3"><img src="http://st.depositphotos.com/1192060/1684/i/450/depositphotos_16844253-stock-photo-couple-sitting-on-the-couch.jpg" width="100%"></div>
+        <div class="col s3"><img src="http://st.depositphotos.com/2117297/4471/i/450/depositphotos_44710637-stock-photo-smiling-man-using-laptop.jpg" width="100%"></div>
+        <div class="col s3"><img src="http://st2.depositphotos.com/1075946/5808/i/450/depositphotos_58085015-stock-photo-woman-sitting-in-shared-apartment.jpg" width="100%"></div>
+      </div> <!--Fin de marco inferior-->
+      
+      <!--Inicio de contactanos-->
+      <footer class="page-footer" id="footer">
+          <div class="row">
+            <div class="col s12 m4 l3" id="informacion-footer">
+              <p> Pagina diseñada por:</p>
+              <p> Andres ramirez</p>
+              <p> Dayana Grueso Lopez</p>
+              <p> Juan pablo</p>
+              <p> Ucc Ing. Sistema 2017</p>
+            </div>
+            <div class="col s12 m4 l5"  id="footer-contactenos">
+              <div class="input-field">   
+                <input id="nombreContacto" type="text" required />
+                <label for="nombreContacto">Nombres:</label>                    
+              </div>
+              <div class="input-field">  
+                <input id="emailContacto" type="email" required />   
+                <label for="emailContacto" id="label-email">E-mail</label>                            
+              </div>              
+              <div class="tipos-comentarios">
+                <input id="comentarioTipo" type="checkbox" name="Comentarios" value="comentarios" checked />
+                  <label for="comentarioTipo" id="label-comentarios">     Comentarios  </label>
+                <input id="reclamoTipo" type="checkbox" name="reclamos" value="Reclamos"/> 
+                  <label for="reclamoTipo" id="label-reclamos">  Reclamos  </label>
+                <input id="mejoraTipo" type="checkbox" name="Mejora" value="mejora"/>          
+                  <label for="mejoraTipo" id="label-mejora">  Mejora </label>
+                <input id="otroTipo" type="checkbox" name="Otro" value="otro" />
+                  <label for="otroTipo" id="label-otro"> Otro</label>
+              </div>
+            </div>
+            <div class="col s12 m4 l4">
+              <textarea id="comentariosContacto" placeholder="Escribe tu comentario" cols="30" rows="8" required></textarea>
+              <input type="submit" class="waves-effect waves-light btn btnPpal" value="Enviar"  />         
+            </div>  
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2014 Copyright Text</div>
+          </div>
+      </footer> <!--Fin de contactanos-->
+
+      <!-- INICIO DE MODAL  DE INICIAR SESION-->
+      <div id="modal1" class="modal modal-registro">
+        <div class="modal-content">
+          <div class="container">
+            <div class="row">
+              <div class="col s12  registro-bienvenida" >
+                <center>
+                  <h4>Roommate</h4>
+                </center>
+                <div class="registro-bienvenida-texto">
+                  Entra en tu cuenta y aprovecha las ventajas que tienes como usuario.                      
+                </div>
+                <br>
+                <center>
+                  <a id="authFB" class="btn waves-effect  blue darken-4  pulse">Entrar con Facebook</a> 
+                  <br><br>
+                  <a id="authTwitter" class="btn waves-effect blue lighten-3 pulse">Entrar con Twitter</a>  
+                </center>
+              </div>                  
+              <div class="col s12  registro-formulario" id="registro">
+                <div class="input-field">                        
+                  <input id="emailContactoReg" type="email" required />
+                  <label for="emailContactoReg">E-mail:</label>  
+                </div>    
+                <div class="input-field">                
+                  <input id="passwordReg" type="password" required />
+                  <label for="passwordReg">Password:</label>
+                </div>
+                <center>
+                  <a id="btnRegistroEmail" class="btn waves-effect waves-light pulse">Ingresar</a>  
+                  <p>¿No tienes cuenta? <a id="btnRegistro" href="#modal2">Registate ya!!</a></p>                
+                </center>     
+              </div>
+            </div>                  
+          </div>
+        </div>        
+      </div>
+      <!-- FIN DE MODAL  DE INICIAR SESION-->
+
+      <!-- INICIO DE MODAL INGRESAR EMAIL Y CLAVE--> 
+      <div id="modal2" class="modal modal-registro">
+        <div class="modal-content">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 registro">
+                <h4>Roommate</h4>
+                <div class="registro-texto">
+                  Registate para que veas las ventajas de tener tu propia cuenta.                  
+                </div>
+              </div>
+              <br> 
+              <div class="col s12  registro-formulario" id="registro-usuario">
+                <div class="input-field">                        
+                  <input id="nombre" type="text" required />
+                  <label for="nombre">Nombre:</label>  
+                </div>
+                <div class="input-field">                        
+                  <input id="email" type="email" required />
+                  <label for="email">E-mail:</label>  
+                </div>    
+                <div class="input-field">                
+                  <input id="password" type="password" required />
+                  <label for="password">Password:</label>
+                </div>
+                <center>
+                  <a id="btnRegistroIngresar" class="btn waves-effect waves-light pulse">Registrate</a>             
+                </center>     
+              </div>
+            </div>                  
+          </div>
+        </div>        
+      </div>
+      <!--FIN DE MODAL INGRESAR EMAIL Y CLAVE-->
+
+
+
+    </body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="C:\Users\AndresStevenRamirezR\Desktop\seminario\Roommate\app\materialize/js/materialize.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+      <script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
+      <script type="text/javascript" src="js/general.js"></script>
+      <script type="text/javascript"  src="js/auth/autenticacion.js"></script>
+      <script type="text/javascript"  src="js/gulpfile.js"></script>
+       
+
+  </html>
+
